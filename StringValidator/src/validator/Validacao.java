@@ -8,6 +8,9 @@ import java.util.regex.Pattern;
  * @version 0.2.0
  */
 public class Validacao {
+	
+	private static String PATTERN_APENAS_NUMEROS_INTEIROS = "\\d*[^a-zA-Z]";
+	private static String PATTERN_APENAS_NUMEROS_COM_DIGITOS = "\\d*[p{.}]\\d*[^a-zA-Z]";
 
 	/**
 	 * Metodo para validar se a String recebida como parametro é composta apenas por números.
